@@ -1,0 +1,111 @@
+/*  
+In this CSS file you can define custom styles without touching the regular stylesheet. 
+So if you want to change fonts, colors etc. then you just need to change and uncomment 
+the prepared lines below or add new lines.
+
+In the example I have just switched some colors from dark red to blue.
+This feature is experimental and I guarantee for nothing ;-)
+*/
+
+
+/******************************************
+*   HTML Elements                         
+******************************************/
+/*
+body {
+	background: #eee;
+	color: #666;
+	}
+*/
+
+/******* Hyperlinks ********************/
+
+/* standard link behaviour */
+/*
+a:link, a:active, a:visited { 
+	color:#003399;
+	} 
+a:hover	{ 
+	color:#003399;
+	}
+*/
+
+/* Title area links */
+/*
+.title:link, .title:active, .title:visited { 
+	color: #003399; 
+	} 
+.title:hover { 
+	color: #003399; 
+	} 
+*/
+
+/* Links in the sidebar */
+/*
+#sidelist .children li a, #sidelist .children li a:visited {
+	color: #003399;
+	}
+*/
+	
+/******************************************
+*   Headlines                         
+******************************************/
+/*
+.blogtitle, .blogtitle a {
+	color: #000;
+	}
+
+h1 {
+	color: #003399;
+	}
+	
+h2 {
+	color: #003399;
+	}
+
+h3 {
+	color:#003399;
+	}
+
+#sidebar h2, #sidebar h3 a {
+	color:#003399;
+	}
+
+#sidebar h3, #sidebar h2 {
+	color:#003399;
+	}
+*/
+/******************************************
+*   Content                        
+******************************************/
+
+/* Formating of the Leadstory stuff in the tabbed section */
+/*			
+#leadpic {
+	float:left;
+	margin: 0 18px 8px 0;
+	padding:1px;
+	border: 1px solid #999;
+	}
+
+.title, a.title  {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:1.1em;
+	font-weight:bold;
+	color: #003399;
+	letter-spacing:normal;
+	}
+*/
+/* for the headlines in the tabbed section */
+/*
+.ui-tabs-panel .title { 
+	color: #003399!important;
+}
+*/
+/* This can be used to format the "[...]" link in the lead story */
+/*
+.read-on a { 
+	color:#003399!important;
+	text-decoration:none;
+	}
+*/

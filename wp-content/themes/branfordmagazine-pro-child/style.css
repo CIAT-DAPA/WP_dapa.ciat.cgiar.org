@@ -1,0 +1,107 @@
+/*
+Theme Name: Branfordmagazine-pro Theme Child
+Version: 1.0
+Author: Peter Casier
+Author URI: http://www.blogtips.org
+Template: branfordmagazine-pro
+*/
+
+@import url("../branfordmagazine-pro/style.css");
+
+/* Christmas */
+#page {
+    /*background: url("https://dl.dropbox.com/u/28296257/ribbon/christmas-ribbon.png") no-repeat scroll right top white;*/
+    border: 3px double #333333;
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 10px 20px 35px;
+    width: 940px;
+}
+
+/* make navigation menu closer to logo */
+#logo {margin-bottom:0px;}
+
+/* different colour and spacing for search form */
+#searchform { padding:5px 0px 0 0; }
+.button {
+	padding: 1px;
+	background:#ddd;
+	color:#fff;
+	border:none;
+	}
+
+/* no justify, align left only and increase fontsize from 100 to 120% */
+.entry {
+	padding-bottom:5px;
+	text-align:left;
+	font-size: 110%;
+	}
+
+/*tweaking of white space and borders for the middle column in the home page */	
+#rightcol {
+	width:300px;
+	padding-left:10px;
+	margin-top: 10px;
+	text-align:left;
+	}
+
+#rightcol .clearfloat {
+	padding: 0 0 25px;
+	border-bottom: medium none;
+}
+
+/*tweaking of font for titles in category and other archives */
+h4 a:link, h4 a:active, h4 a:visited  {
+	color: #840000;
+	font: 1.4em Georgia,"Times New Roman",Times,serif;
+	text-decoration:none;
+}
+h4 a:hover {text-decoration:underline;}
+
+/* Previous - next posts */
+
+.previouspost {
+    text-align: left;
+    float: left;
+    width: 50%;
+    font-size: 13px;
+}
+
+.nextpost {
+    text-align: right;
+    float: right;
+    width: 50%;
+    font-size: 13px;
+}
+
+
+/* tweak footer underline */
+
+#alternative_footer a {
+	color:#4f4f4f;
+      text-decoration: none;
+	}
+
+#alternative_footer a:hover {
+	color:#4f4f4f;
+	text-decoration: underline;
+}
+
+/* tweak footer titles */
+#alternative_footer h4 a:link, #alternative_footer h4 a:active, #alternative_footer h4 a:visited {
+	font: 1.0em Arial,Verdana,Sans-Serif;
+	font-weight: bold;
+}
+
+/* square list style for item-list in footer */
+#alternative_footer ul {
+	list-style-type:square;
+	padding: 0 0 0 10px;
+}
+
+
+/* display twtter time in a single line */
+#alternative_footer .time-meta {
+	display: block;
+}
+

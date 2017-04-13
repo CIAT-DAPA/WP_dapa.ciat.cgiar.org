@@ -1,0 +1,316 @@
+/***********************************************
+*   STYLES FOR THE HORIZONTAL NAVIGATION MENUES  
+
+This file contains the CSS for the horizontal 
+navigation bars. One for the page navigation,
+one for the category navigation and one for 
+the custom navigation menue that was introduced
+in Wordpress version 3.0.
+
+************************************************/
+
+
+/***********************************************
+*   PAGES NAVBAR  
+************************************************/
+
+#nav {
+	background:#333;
+	font-size:1em;
+	box-shadow: 1px 1px 3px #c5c5c5;
+	-moz-box-shadow: 1px 1px 3px #c5c5c5;
+	-webkit-box-shadow: 1px 1px 3px #c5c5c5;
+	}
+	
+#nav, #nav ul {
+	list-style:none;
+	line-height:18px;
+	}
+
+#nav a, #nav a:hover {
+	display: block;
+	text-decoration: none;
+	border:none;
+	}
+
+#nav li {
+	float: left;
+	list-style:none;
+	border-right:1px solid #fff;
+	}
+
+#nav a, #nav a:visited {
+	display:block;
+	color: #eee;
+	padding:6px 12px;
+	}
+
+#nav a:hover, #nav a:active {
+	background:#666;
+	text-decoration:none;
+	}	
+
+
+.current_page_item	a, .home .on  {background:#FFFFFF;}
+
+	
+	
+/*** Dropdown Menus for child pages ***/		
+
+#nav li ul {/*first level dropdown*/
+	position: absolute;
+	z-index: 10;
+	left: -999em;
+	height: auto;
+	width: 174px;
+	border-bottom: 1px solid #666;
+	}
+	
+#nav li ul ul {/*second level dropdown*/
+	margin: -2em 0 0 172px;
+	}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+	}
+
+#nav li li {
+	width: 172px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background:#666;
+	}
+
+#nav li li a, #nav li li a:visited {
+	font-weight:normal;
+	color:#FFF;
+	}
+
+#nav li li a:hover, #nav li li a:active {background:#840000;}	
+	
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {left: auto;}
+
+a.main:hover {background:none;}
+
+
+
+/***********************************************
+*   CATEGORIES NAVBAR  
+************************************************/
+
+#catnav {
+	margin-top:0px;
+/**	background:#840000; **/
+	background:#FFFFFF;
+	font-size:1em;
+	border-top:none;
+	box-shadow: 1px 1px 3px #c5c5c5;
+	-moz-box-shadow: 1px 1px 3px #c5c5c5;
+	-webkit-box-shadow: 1px 1px 3px #c5c5c5;
+	}
+	
+#catnav, #catnav ul {
+	list-style: none;
+	line-height: 18px;
+	}
+
+#catnav a {
+	display: block;
+	text-decoration: none;
+	border:none;
+	}
+
+#catnav li {
+	float: left;
+	list-style:none;
+	}
+
+#catnav a, #catnav a:visited {
+	display:block;
+/**	color: #E6E3D3; **/
+	color: #333333;
+	padding:6px 12px;
+	}
+
+#catnav a:hover {
+	display: block;
+	border:none;
+
+/**	color:#fff;   *//
+	color: #333333;
+	background:#ccc;
+	text-decoration:none;
+	}	
+
+#catnav a:active {
+/**	color:#fff;   *//
+	color: #333333;
+	text-decoration:none;
+	}	
+
+#catnav .current-cat {
+/**	background:#333; **/
+	background:#FFFFFF;
+
+	}	
+
+	
+/*** Dropdown Menus for categories  ***/
+
+#catnav li ul {/*first level dropdown*/
+	position: absolute;
+	z-index: 10;
+	left: -999em;
+	height: auto;
+	width: 174px;
+	border-bottom:1px solid #fff;
+	box-shadow: 1px 1px 3px #c5c5c5;
+	-moz-box-shadow: 1px 1px 3px #c5c5c5;
+	-webkit-box-shadow: 1px 1px 3px #c5c5c5;
+
+	}
+	
+#catnav li ul ul {/*second level dropdown*/
+	margin: -2em 0 0 172px;
+	}
+
+#catnav li:hover ul ul, #catnav li.sfhover ul ul {
+	left: -999em;
+	}
+
+#catnav li li {
+	width: 172px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+/**	background:#880000;  **/
+	background:#FFFFFF;
+	}
+
+#catnav li li a, #catnav li li a:visited {
+	font-weight:normal;
+/**	color:#fff;   *//
+	color: #333333;
+	}
+
+#catnav li li a:hover, #catnav li li a:active {
+/**	background:#666; **/
+	background:#ccc;
+/**	color:#fff;   *//
+	color: #333333;
+	}	
+
+#catnav li li a:active {
+/**	background:#666; **/
+	background:#FFFFFF;
+/**	color:#fff;   *//
+	color: #333333;
+	}	
+
+	
+#catnav li:hover ul, #catnav li li:hover ul, #catnav li li li:hover ul, #catnav li.sfhover ul, #catnav li li.sfhover ul, #catnav li li li.sfhover ul {left: auto;}
+
+#catnav .current-menu-item {background:#ffffff;}
+#catnav .current_page_item a {background:#ffffff;}
+#catnav .current_page_item a:hover {background:#ccc;}
+
+/***********************************************
+*  NEW WORDPRESS 3 CUSTOM MENUE STYLES
+************************************************/
+
+#wp_nav_menu {
+	background: #E6E3D3;
+	margin: 0 auto;
+	width: 940px;
+	display:block;
+	float:left;
+	border:1px solid #ccc
+/**
+	box-shadow: 1px 1px 3px #c5c5c5;
+	-moz-box-shadow: 1px 1px 3px #c5c5c5;
+	-webkit-box-shadow: 1px 1px 3px #c5c5c5;
+**/
+}
+
+#wp_nav_menu .menu-header,
+div.menu {
+	margin-left: 0px;
+}
+
+#wp_nav_menu .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0;
+}
+
+#wp_nav_menu .menu-header li,
+div.menu li {
+	float:left;
+	position: relative;
+}
+
+#wp_nav_menu a {
+	display:block;
+	text-decoration:none;
+	color:#333;
+	padding:0 10px;
+	line-height:28px;
+}
+
+#wp_nav_menu ul li {
+	border-right: 1px solid #fff;
+}
+
+#wp_nav_menu ul li li {
+	height:28px;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+#wp_nav_menu ul ul {
+
+	display:none;
+	position:absolute;
+	top:28px;
+	left:0;
+	float:left;
+/**
+	box-shadow: 1px 1px 3px #c5c5c5;
+**/
+	z-index: 99999;
+}
+
+#wp_nav_menu ul ul ul {
+	left:100%;
+	top:0;
+}
+
+#wp_nav_menu ul ul a {
+/**
+	background:#333;
+**/
+	background: #E6E3D3;
+	height:auto;
+	line-height:1em;
+	padding:10px;
+	width: 150px;
+}
+
+#wp_nav_menu li:hover > a {
+	color:#fff;
+	background:#333;
+}
+
+#wp_nav_menu ul ul :hover > a {
+	color:#FFFFFF;
+	background:#000000;
+}
+
+#wp_nav_menu ul li:hover > ul {
+	display:block;
+}
+
+
+.current-menu-item {background:#FFFFFF;}

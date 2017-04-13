@@ -1,0 +1,138 @@
+/*****************************************************
+*   Special styles for the various page templates                      
+****************************************************/
+
+/* Styles for the "3-columns-page template" */
+
+#pageleft {
+	float: left;
+	width: 285px;
+	margin: 20px 20px 0px 0px;
+	padding: 0 20px 0 0;
+	border-right: solid 1px #999;
+	text-align:justify;
+	}
+	
+#pagemiddle {
+	float: left;
+	width: 285px;
+	margin: 20px 20px 0px 0px;
+	padding: 0px;
+	text-align:justify;
+	}
+	
+#pageright {
+	float: right;
+	width: 285px;
+	margin: 20px 0px 0px 0px;
+	padding: 0 0 0 20px;
+	border-left: solid 1px #999;
+	text-align:justify;
+	}
+
+#pageleft .bullets li, #pagemiddle .bullets li, #pageright .bullets li {
+	list-style:square;
+	margin-bottom:5px;
+	margin-left:22px;
+	text-decoration:none!important;
+	}
+
+/* Styles for the "featured-page template" */
+
+#featured-top {
+	width:940px;
+	float:left;
+	padding: 0 0 15px 0;
+	margin: 0 0 25px 0;
+	border-bottom: double 3px #999; 
+	}
+
+#featured-content {
+	width:620px;
+	float:left;
+	}
+	
+	
+#featured-sidebar {
+	width: 300px;
+	float:right;
+	}
+	
+#featured-sidebar h3 {
+	border-bottom:1px solid #999;
+	padding:5px 0 5px 2px;
+	margin:0 0 20px 0;
+	}	
+	
+#featured-sidebar .sidebar_widget {
+	margin:0 0 20px 0;
+	text-align:justify;
+	}
+	
+#featured-leftcol {
+	width:620px;
+	float:left;
+	margin:20px 0 0 0;
+	padding: 0 20px 0 0;
+	border-right: 1px solid #999;
+	}
+
+#featured-leftcol h2, #featured-rightcol h2, #featured-content h2{
+	color: #840000;
+	font: 1.8em Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 10px 0;
+	border:none;
+	}
+
+#featured-leftcol img{
+	float:left;
+	margin:0 20px 10px 0;
+	padding:1px;
+	border: 1px solid #999;
+	}
+
+#featured-rightcol{
+	width:280px;
+	float:right;
+	margin-top:20px;
+	}
+
+#featured-rightcol li {
+	list-style:none
+	}
+
+#featured-rightcol .bullets li {
+	list-style:square;
+	margin-bottom:5px;
+	margin-left:22px;
+	}
+
+.featured_post blockquote {
+	color:#666;
+	background:#F4F4EC;
+	padding:6px 14px;
+	margin:18px 35px;
+	border-right:1px solid #DDD;
+	border-bottom:1px solid #DDD;
+	}	
+
+.featured_post ul li {
+	list-style:square;
+	margin-bottom:5px;
+	
+	margin-left:42px;
+	}
+
+.featured_post ol li {
+	margin-bottom:5px;
+	
+	margin-left:48px;
+	}
+
+/* Styles for the "fullwidth-page template" */
+
+#fullwidthpage {
+	float: left;
+	width: 940px;
+	text-align:justify;
+	}

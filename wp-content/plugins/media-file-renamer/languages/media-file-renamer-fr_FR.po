@@ -1,0 +1,599 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Retina 2x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-14 19:29+0900\n"
+"PO-Revision-Date: 2016-03-14 19:29+0900\n"
+"Last-Translator: Jordy Meow <jordy@meow.fr>\n"
+"Language-Team: Jordy Meow <work@meow.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: media-file-renamer.php:74 media-file-renamer.php:77
+#: media-file-renamer.php:115
+msgid "Rename"
+msgstr "Renommer"
+
+#: media-file-renamer.php:126
+msgid "Manually renamed."
+msgstr ""
+
+#: media-file-renamer.php:128
+msgid "Locked to manual only. Click to unlock it."
+msgstr ""
+
+#: media-file-renamer.php:131
+msgid "Automatically renamed."
+msgstr ""
+
+#: media-file-renamer.php:133 media-file-renamer.php:415
+msgid "Click to lock it to manual only."
+msgstr ""
+
+#: media-file-renamer.php:169
+msgid "Done. Please <a href='javascript:history.go(0)'>refresh</a> this page."
+msgstr "Fait. <a href='javascript:history.go(0)'>Rafraîchissez</a> cette page."
+
+#: media-file-renamer.php:178
+msgid "Please wait..."
+msgstr "Patientez SVP..."
+
+#: media-file-renamer.php:230
+msgid "File Renamer"
+msgstr "Renommer"
+
+#: media-file-renamer.php:402 media-file-renamer.php:405
+#, fuzzy
+msgid "Edit Media"
+msgstr "Modifier le titre"
+
+#: media-file-renamer.php:402
+msgid "This title cannot be used for a filename."
+msgstr ""
+
+#: media-file-renamer.php:405
+msgid ""
+"The ideal filename already exists. If you would like to use a count and "
+"rename it, enable the <b>Numbered Files</b> option in the plugin settings."
+msgstr ""
+
+#: media-file-renamer.php:414
+#, fuzzy
+msgid "Auto-Rename"
+msgstr "Renommer"
+
+#: media-file-renamer.php:418
+#, fuzzy, php-format
+msgid "Rename to %s. You can also <a href=\"%s\">edit this media</a>."
+msgstr ""
+"Sera renommé en %s.<br />Vous pouvez aussi <a href=\"%s\">modifier le titre</"
+"a>."
+
+#: media-file-renamer.php:439 media-file-renamer.php:443
+#, php-format
+msgid "Rename <span class='mfrh-flagged'>%d</span> flagged media"
+msgstr "Renommer les <span class='mfrh-flagged'>%d</span> fichiers flaggés"
+
+#: media-file-renamer.php:449
+#, fuzzy, php-format
+msgid "Unlock & Rename all %d media"
+msgstr "Renommer tous les %d fichiers"
+
+#: media-file-renamer.php:460 media-file-renamer.php:463
+msgid "Title"
+msgstr "Titre"
+
+#: media-file-renamer.php:460 media-file-renamer.php:463
+msgid "Current Filename"
+msgstr "Fichier actuel"
+
+#: media-file-renamer.php:460 media-file-renamer.php:463
+msgid "Desired Filename"
+msgstr "Fichier cible"
+
+#: media-file-renamer.php:460 media-file-renamer.php:463
+msgid "Action"
+msgstr "Action"
+
+#: media-file-renamer.php:479
+msgid ""
+"There are no issues.<br />Cool! Let's go visit <a href='http://www."
+"totorotimes.com'>Totoro Times</a> :)"
+msgstr ""
+"Il n'y a aucun problème. Cool ! Allons visiter <a href='http://www."
+"totorotimes.fr'>Totoro Times</a> :)"
+
+#: media-file-renamer.php:485
+#, fuzzy
+msgid "Scan All & Show Issues"
+msgstr "Lister les problèmes (rescan)"
+
+#: media-file-renamer.php:630
+msgid ""
+"There was an error while validating the serial.<br />Please contact <a "
+"target='_blank' href='http://apps.meow.fr/contact/'>Meow Apps</a> and "
+"mention the following log.<br /><br /><small>"
+msgstr ""
+
+#: media-file-renamer.php:636
+msgid "Your serial does not seem right."
+msgstr ""
+
+#: media-file-renamer.php:638
+msgid "Your subscription is not active."
+msgstr ""
+
+#: media-file-renamer.php:640
+msgid "Too many URLs are linked to your subscription."
+msgstr ""
+
+#: media-file-renamer.php:648
+msgid "Your subscription is enabled."
+msgstr ""
+
+#: media-file-renamer.php:748
+msgid "Basics"
+msgstr "Simple"
+
+#: media-file-renamer.php:752
+msgid "Pro"
+msgstr ""
+
+#: media-file-renamer.php:759
+#, fuzzy
+msgid "Auto Rename"
+msgstr "Auto-Génération"
+
+#: media-file-renamer.php:760
+msgid ""
+"If the plugin considers that it is too dangerous to rename the file directly "
+"at some point, it will be flagged internally as <b>to be renamed</b>. The "
+"list of those flagged files can be found in Media > File Renamer and they "
+"can be renamed from there."
+msgstr ""
+
+#: media-file-renamer.php:764
+msgid ""
+"None<br /><small>Disabled. Only manual renaming can be used.</small><br />"
+msgstr ""
+
+#: media-file-renamer.php:765
+msgid ""
+"Media Title<br /><small>The filename will be renamed automatically depending "
+"on the title of the media. <b>This is the recommended method.</b></"
+"small><br />"
+msgstr ""
+
+#: media-file-renamer.php:766
+msgid ""
+"Post Title (Pro)<br /><small>The filename will be renamed automatically "
+"depending on the title of the post the media <b>is attached to</b>.</"
+"small><br />"
+msgstr ""
+
+#: media-file-renamer.php:770
+msgid "Manual Rename (Pro)"
+msgstr ""
+
+#: media-file-renamer.php:771
+msgid ""
+"Enable manual renaming in the Media edit screen.<br /><small>This feature is "
+"only for Pro users (check the Pro tab).</small>"
+msgstr ""
+
+#: media-file-renamer.php:776
+msgid "Numbered Files (Pro)"
+msgstr ""
+
+#: media-file-renamer.php:777
+msgid ""
+"Identical filenames will be allowed and a number will be added.<br /"
+"><small>This is useful if your titles the same ones for many of your images "
+"(myfile.jpg, myfile-2.jpg, myfile-3.jpg, etc).</small>"
+msgstr ""
+
+#: media-file-renamer.php:783
+msgid ""
+"<h1>Side-Updates</h1><small>When the files are renamed, many links to them "
+"on your WordPress might be broken. By default, the plugin updates all the "
+"references in the posts. As the plugin evolves (thanks to the Pro version), "
+"more and more plugins/themes will be covered by those updates as we discover "
+"them together.</small>"
+msgstr ""
+
+#: media-file-renamer.php:787
+msgid "Update Posts"
+msgstr ""
+
+#: media-file-renamer.php:788
+msgid ""
+"Update the references to the renamed files in the posts (pages and custom "
+"types included)."
+msgstr ""
+
+#: media-file-renamer.php:793
+msgid "Update Post Meta"
+msgstr ""
+
+#: media-file-renamer.php:794
+msgid ""
+"Update the references in the posts metadata (including pages and custom "
+"types metadata)."
+msgstr ""
+
+#: media-file-renamer.php:800
+msgid ""
+"<i>Something is not updated when you rename a file? Please <a href=\"http://"
+"apps.meow.fr/contact/\">contact me</a> and I will add support for it.</i>"
+msgstr ""
+
+#: media-file-renamer.php:805
+msgid "Rename Slug"
+msgstr "Renommer Identifiant (slug)"
+
+#: media-file-renamer.php:806
+msgid ""
+"The image slug will be renamed like the new filename.<br /><small>Better to "
+"keep this un-checked as the link might have been referenced somewhere else.</"
+"small>"
+msgstr ""
+
+#: media-file-renamer.php:811
+msgid "Rename GUID<br /><small>(aka \"File name\")</small>"
+msgstr ""
+
+#: media-file-renamer.php:812
+msgid ""
+"The GUID will be renamed like the new filename.<br /><small>Better to keep "
+"this un-checked. Have a look a the FAQ.</small>"
+msgstr ""
+
+#: media-file-renamer.php:817
+msgid "Alt. Text = Title (Pro)<br /><small>Sync Alternative Text</small>"
+msgstr ""
+
+#: media-file-renamer.php:818
+msgid ""
+"The Alternative Text will always be synchronized with the Title.<br /"
+"><small>Keep in mind that the HTML in your posts and pages will be however "
+"not modified, that is too dangerous!</small>"
+msgstr ""
+
+#: media-file-renamer.php:824
+msgid ""
+"<h1>Advanced</h1><small>If you are geeky this section might be more "
+"interesting for you. <b>Want to clear/reset the logs? Click <a href=\"?"
+"page=mfrh_settings&reset=true\">here</a>.</b></small>"
+msgstr ""
+
+#: media-file-renamer.php:828
+msgid "Rename On Save"
+msgstr "Renommer On Save"
+
+#: media-file-renamer.php:829
+msgid ""
+"Attachments will be renamed automatically when published posts/pages are "
+"saved.<br /><small>You can change the names of your media while editing a "
+"post but that wouldn't let the plugin updates the HTML, of course. With this "
+"option, the plugin will check for any changes in the media names and will "
+"update your post right after you saved it.</small>"
+msgstr ""
+
+#: media-file-renamer.php:834
+msgid "UTF-8 Filename (Pro)"
+msgstr ""
+
+#: media-file-renamer.php:835
+msgid ""
+"The plugin will be allowed to use non-ASCII characters in the filenames.<br /"
+"><small>This usually doesn't work well on Windows installs.</small>"
+msgstr ""
+
+#: media-file-renamer.php:840
+#, fuzzy
+msgid "Force Rename (Pro)"
+msgstr "Renommer"
+
+#: media-file-renamer.php:841
+msgid ""
+"Update the references to the file even if the file renaming itself was not "
+"successful.<br /><small>You might want to use that option if your install is "
+"broken and you are trying to link your Media to files for which the "
+"filenames has been altered (after a migration for exemple)</small>"
+msgstr ""
+
+#: media-file-renamer.php:846
+msgid "Logs"
+msgstr ""
+
+#: media-file-renamer.php:847
+msgid ""
+"Simple logging that explains which actions has been run. The file is <a "
+"target=\"_blank\" href=\""
+msgstr ""
+
+#: media-file-renamer.php:852
+msgid "SQL Logs (Pro)<br />+ Revert SQL"
+msgstr ""
+
+#: media-file-renamer.php:853
+msgid "The files <a target=\"_blank\" href=\""
+msgstr ""
+
+#: media-file-renamer.php:867
+msgid "Serial"
+msgstr ""
+
+#: media-file-renamer.php:868
+msgid ""
+"<br />Enter your serial or subscription ID here. If you don't have one yet, "
+"get one <a target=\"_blank\" href=\"http://apps.meow.fr/media-file-renamer/"
+"\">right here</a>."
+msgstr ""
+
+#~ msgid "Add title"
+#~ msgstr "Ajouter un titre"
+
+#~ msgid "No title for this media, please add one."
+#~ msgstr "Pas de titre pour ce media."
+
+#~ msgid "Current title already exists."
+#~ msgstr "Le titre existe déjà."
+
+#~ msgid "Rename now"
+#~ msgstr "Renommer maintenant"
+
+#~ msgid "The image slug will also be renamed."
+#~ msgstr "L'identifiant (slug) sera également renommé."
+
+#~ msgid ""
+#~ "Attachments will be renamed automatically when published posts/pages are "
+#~ "saved."
+#~ msgstr ""
+#~ "Les attachements seront renommés automatiquement quand les posts/pages "
+#~ "publiés sont sauvegardés."
+
+#~ msgid "Flagged to be renamed"
+#~ msgstr "Flaggé pour être renommé"
+
+#~ msgid "Write a title."
+#~ msgstr "Écrire un titre."
+
+#~ msgid "Ready to be renamed."
+#~ msgstr "Prêt à être renommé."
+
+#~ msgid "Rename %s"
+#~ msgstr "Renommer %s"
+
+#~ msgid "There are no issues."
+#~ msgstr "Il n'y a aucun problème. "
+
+#~ msgid ""
+#~ "Done. You might want to <a href='?page=wp-"
+#~ "retina-2x&view=issues&refresh=true'>refresh</a> the issues."
+#~ msgstr ""
+#~ "Fait. Vous devriez peut-être <a href='?page=wp-"
+#~ "retina-2x&view=issues&refresh=true'>rafraîchir</a> la liste des problèmes."
+
+#~ msgid "Nothing to do ;)"
+#~ msgstr "Rien à faire ;)"
+
+#~ msgid "GENERATE"
+#~ msgstr "GÉNÉRER"
+
+#~ msgid "Retina files deleted."
+#~ msgstr "Les images Retina ont été supprimées."
+
+#~ msgid "Retina files generated."
+#~ msgstr "Les images Retina ont été générées."
+
+#~ msgid "You do not have permission to upload files."
+#~ msgstr "Vous n'avez pas la permission d'uploader des fichiers."
+
+#~ msgid "The file is not an image or the upload went wrong."
+#~ msgstr ""
+#~ "Ce fichier n'est pas une image ou alors il y a eu un problème durant "
+#~ "l'upload."
+
+#~ msgid "You cannot use this file (wrong extension? wrong type?)."
+#~ msgstr ""
+#~ "Vous ne pouvez pas utiliser ce fichier (mauvaise extension ou type ?)."
+
+#~ msgid "Replaced successfully."
+#~ msgstr "Remplacé avec succès."
+
+#~ msgid "Retina images"
+#~ msgstr "Images Retina"
+
+#~ msgid "Retina %s"
+#~ msgstr "Retina %s"
+
+#~ msgid "Generate"
+#~ msgstr "Générer"
+
+#~ msgid "Delete all @2x"
+#~ msgstr "Tout supprimer (@2x)"
+
+#~ msgid "Refresh issues"
+#~ msgstr "Rafraîchir"
+
+#~ msgid "Issues has been refreshed."
+#~ msgstr "La liste des problèmes a été rafraîchie."
+
+#~ msgid ""
+#~ "This screen allows you to check the media for which the retina files are "
+#~ "missing. You can then create the files independently for each media or "
+#~ "for all of them. You can also upload and replace the images by drag & "
+#~ "drop them on the grid."
+#~ msgstr ""
+#~ "Cet écran vous permet de vérifier pour quels médias les fichiers Retina "
+#~ "n'ont pas encore été créés. Vous pouvez ensuite créer les fichiers "
+#~ "indépendemment ou pour l'ensemble d'entre-eux. Vous pouvez aussi glisser "
+#~ "& déposer les nouveaux fichiers dans le tableau."
+
+#~ msgid "All"
+#~ msgstr "Tous"
+
+#~ msgid "Issues"
+#~ msgstr "Problèmes"
+
+#~ msgid "Ignored"
+#~ msgstr "Ignorés"
+
+#~ msgid "Titre"
+#~ msgstr "Titre"
+
+#~ msgid "IGNORE"
+#~ msgstr "IGNORER"
+
+#~ msgid "Client side"
+#~ msgstr "Client side"
+
+#~ msgid "Server side"
+#~ msgstr "Server side"
+
+#~ msgid ""
+#~ "By the way, you are using a <b>WordPress Multi-Site installation</b>! You "
+#~ "must edit your .htaccess manually and add '<b>RewriteRule ^files/(.+) wp-"
+#~ "content/plugins/wp-retina-2x/wr2x_image.php?ms=true&file=$1 [L]</b>' as "
+#~ "the first RewriteRule if you want the server-side to work."
+#~ msgstr ""
+#~ "Vous avez une <b>installation Multi-Site de WordPress</b> ! Vous devez "
+#~ "éditer votre .htaccess manuellement et rajouter '<b>RewriteRule ^files/(."
+#~ "+) wp-content/plugins/wp-retina-2x/wr2x_image.php?ms=true&file=$1 [L]</"
+#~ "b>' en tant que première RewriteRule si vous voulez que le Client side "
+#~ "fonctionne."
+
+#~ msgid ""
+#~ "The permalinks are not enabled. They need to be enabled in order to use "
+#~ "the server-side method."
+#~ msgstr ""
+#~ "Les permaliens n'étant pas activés, la méthode côté serveur ne pourra pas "
+#~ "fonctionner."
+
+#~ msgid "Advanced"
+#~ msgstr "Avancé"
+
+#~ msgid "Disabled Sizes"
+#~ msgstr "Tailles désactivés"
+
+#~ msgid "The checked sizes will not be generated for Retina displays."
+#~ msgstr ""
+#~ "Les tailles sélectionnés ne seront pas prises en compte pour Retina."
+
+#~ msgid ""
+#~ "Generate Retina images automatically when images are uploaded to the "
+#~ "Media Library."
+#~ msgstr ""
+#~ "Génération automatique des fichiers Retina dès que vous uploadez ou "
+#~ "remplacez des médias."
+
+#~ msgid "Method"
+#~ msgstr "Méthode"
+
+#~ msgid ""
+#~ "<br />The <b>server-side method</b> is very fast and efficient. However, "
+#~ "depending on the hosting and cache system you are using (including "
+#~ "services like Cloudflare) you might encounter issues.\n"
+#~ "                <br /><br />The <b>client-side method</b> is fail-safe "
+#~ "and only uses a JavaScript file. When a Retina Display is detected, "
+#~ "requests for every images on the page will be sent to the server and a "
+#~ "high resolution one will be retrieved if available. Most websites (Apple "
+#~ "for instance) use this method."
+#~ msgstr ""
+#~ "La <b>méthode côté serveur</b> est très rapide et optimal. Cependant, "
+#~ "selon votre système de caching (et tout particulièrement si vous utilisez "
+#~ "Cloudflare), ça ne fonctionnera peut-être pas correctement.\n"
+#~ "                La <b>méthode côté client</b> est très fiable, fonctionne "
+#~ "dans tous les cas et utilise seulement un JavaScript. C'est une méthode "
+#~ "moins rapide et performante mais c'est la méthode utilisée sur le site "
+#~ "d'Apple."
+
+#~ msgid "Debug Mode"
+#~ msgstr "Mode Debug"
+
+#~ msgid ""
+#~ "If checked, the client will be always served Retina images. Convenient "
+#~ "for testing."
+#~ msgstr ""
+#~ "Si sélectionné, les images Retina seront toujours délivrées. Idéal pour "
+#~ "vos tests."
+
+#~ msgid "Hide 'Retina' column"
+#~ msgstr "Cacher la colonne 'Retina'"
+
+#~ msgid "Will hide the 'Retina Column' from the Media Library."
+#~ msgstr "La colonne Retina ne s'affichera plus dans la Bibliothèque."
+
+#~ msgid "Hide Retina Dashboard"
+#~ msgstr "Cacher le Retina Dashboard"
+
+#~ msgid "Doesn't show the Retina Dashboard menu and tools."
+#~ msgstr "Le Retina Dashboard ne s'affichera plus dans les menus."
+
+#~ msgid ""
+#~ "Current method: <u>Server-side</u>.</span> Oh, and don't forget to check "
+#~ "the tutorial of this plugin on <a href='http://www.totorotimes.com/news/"
+#~ "retina-display-wordpress-plugin'>Totoro Times</a>."
+#~ msgstr ""
+#~ "Méthode sélectionnée: <u>Server-side</u>.</span> Oh, n'oubliez pas de "
+#~ "lire mon tutoriel sur ce plugin sur <a href='http://www.totorotimes.com/"
+#~ "news/retina-display-wordpress-plugin'>Totoro Times</a>."
+
+#~ msgid "Done."
+#~ msgstr "Terminé."
+
+#~ msgid "ERROR"
+#~ msgstr "ERREUR"
+
+#~ msgid "Not created yet."
+#~ msgstr "Pas encore créé."
+
+#~ msgid "Generate for all files"
+#~ msgstr "Générer tous les fichiers"
+
+#~ msgid ""
+#~ "By the way, you are also using a <b>WordPress Network installation</b>. "
+#~ "The server-side might not work for you, so <b>please try the client-side "
+#~ "method instead</b>. If you really want to use this method, you will have "
+#~ "to work on your .htaccess manually."
+#~ msgstr ""
+#~ "Vous utilisez une version de WordPress <b>Multisite</b>. Il est possible "
+#~ "que la méthode côté serveur ne fonctionne pas, alors dans ce cas essayé "
+#~ "la méthode <b>côté client</b>. Si vous voulez vraiment utiliser cette "
+#~ "méthode, vous aurez peut-être besoin de bidouiller votre .htaccess "
+#~ "manuellement."
+
+#~ msgid ""
+#~ "This plugin supports and uses the <a href='http://wordpress.org/extend/"
+#~ "plugins/enable-media-replace/'>Enable Media Replace</a> plugin if "
+#~ "available. A 'Replace' button will appear in case your images are too "
+#~ "small. It is strongly recommended to install it."
+#~ msgstr ""
+#~ "WP Retina 2x peut automatiquement utiliser le plugin <a href='http://"
+#~ "wordpress.org/extend/plugins/enable-media-replace/'>Enable Media Replace</"
+#~ "a> si il est installé. Un bouton 'Réuploader' apparaîtra alors lorsque "
+#~ "l'image originale est trop petite."
+
+#~ msgid ""
+#~ "This plugin is actively developped and maintained by <a href='https://"
+#~ "plus.google.com/106075761239802324012'>Jordy Meow</a>.<br />Please visit "
+#~ "me at <a href='http://www.totorotimes.com'>Totoro Times</a>, a website "
+#~ "about Japan, photography and abandoned places.<br />And thanks for "
+#~ "linking us on <a href='https://www.facebook.com/totorotimes'>Facebook</a> "
+#~ "and <a href='https://plus.google.com/106832157268594698217'>Google+</a> :)"
+#~ msgstr ""
+#~ "Ce plugin est activement développé et maintenu par <a href='https://plus."
+#~ "google.com/106075761239802324012'>Jordy Meow</a>.<br />Merci de me "
+#~ "visiter sur <a href='http://www.totorotimes.fr'>Totoro Times</a>, un site "
+#~ "sur le Japan, la photographie et les endroits abandonnés.<br />Et merci "
+#~ "de nous adorer sur <a href='https://www.facebook.com/"
+#~ "totorotimes'>Facebook</a> et <a href='https://plus.google."
+#~ "com/106832157268594698217'>Google+</a> :)"

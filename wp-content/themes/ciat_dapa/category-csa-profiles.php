@@ -1,0 +1,1 @@
+<?php wp_redirect( 'http://dapa.ciat.cgiar.org/csa-profiles/', 301 ); exit; ?>

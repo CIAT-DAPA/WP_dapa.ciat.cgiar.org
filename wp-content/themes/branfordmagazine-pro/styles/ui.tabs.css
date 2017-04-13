@@ -1,0 +1,137 @@
+/* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none!important;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none!important;
+    }
+}
+
+/* Skin */
+#container-4 { /* the whole container with all elements of the tabbed section */
+	margin: 20px 0 20px 0!important;
+	height:210px!important; /* defines a static height to the tabed section and avoids "jumping" - part 1 of 2 */
+}
+
+.ui-tabs-panel { /* the main content-section of the tabbed area NOT the tabs themselfes */
+	width:590px!important;
+    padding: 15px!important;
+	border: 1px solid #ccc!important;
+	box-shadow: 1px 1px 3px #c5c5c5;
+	-moz-box-shadow: 1px 1px 3px #c5c5c5;
+	-webkit-box-shadow: 1px 1px 3px #c5c5c5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c5c5c5')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#c5c5c5');
+	background: url(../images/backgrounds/bg_leadarticle.jpg) repeat-x #E6E3D3!important; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+
+/* the "fragments" which are the single tab areas. each tab is defined by a fragment. 
+you can add as many as you want following the scheme "#fragment-x" */
+#fragment-1, #fragment-2, #fragment-3, #fragment-4, #fragment-5, #fragment-6, #fragment-7, #fragment-8, #fragment-9 {
+	height:150px!important; /* defines a static height to the tabed section and avoids "jumping" - part 2 of 2 */
+}
+
+.ui-tabs-panel .title { /* for the headlines in the tabbed section */
+/*	font:1.8em Georgia, "Times New Roman", Times, serif!important; */
+	line-height:100%!important;
+	display:block!important;
+	padding-bottom:7px!important;
+	color: #840000!important;
+	text-transform:none!important;
+	letter-spacing:normal!important;
+
+}
+
+.ui-tabs-nav { /* the whole area of the tabs navigation above the tabbed-content */
+    list-style:none!important;
+    margin:0px!important;
+    padding:0px!important;
+}
+
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block!important;
+    clear: both!important;
+    content: " "!important;
+}
+.ui-tabs-nav li {
+    float: left!important;
+    margin:0 1px 0 0!important;
+    min-width: 85px!important; /* be nice to Opera */
+}
+.ui-tabs-nav .ui-tabs {
+    display:block!important;
+    padding:5px!important;
+    background:#E6E3D3!important;
+	margin:1px 0 0 0!important; /* position: relative makes opacity fail for disabled tab in IE */
+	position: relative!important;
+    top:1px!important;
+    z-index:2!important;
+    color: #333!important;
+    font-weight:bold!important;
+    line-height:1.2!important;
+    text-align:center!important;
+    text-decoration:none!important;
+	border:1px solid #ccc!important;
+    white-space:nowrap!important; /* required in IE 6 */    
+    outline:0!important; /* prevent dotted border in Firefox */
+}
+
+
+.ui-tabs-nav .ui-tabs:hover { /* here´s to define the hover effect of the tabs */
+    background:#333!important;
+	color:#fff!important;
+}
+
+
+.ui-tabs-selected .ui-tabs { /* the effects of the currently selected tab */
+	background-color:#fff!important;
+    color:#333!important;
+	border-bottom:1px solid #fff!important;
+}
+
+.ui-tabs-nav .ui-tabs-selected .ui-tabs, 
+.ui-tabs-nav .ui-tabs a:hover, 
+.ui-tabs-nav .ui-tabs a:active {
+    background-position: 100% -150px!important;
+}
+
+.ui-tabs-nav .ui-tabs, 
+.ui-tabs-nav .ui-tabs-disabled .ui-tabs a:hover, 
+.ui-tabs-nav .ui-tabs-disabled .ui-tabs a:active {
+    background-position: 100% -100px!important;
+}
+
+.ui-tabs-nav .ui-tabs-selected .ui-tabs a:link, 
+.ui-tabs-nav .ui-tabs-selected .ui-tabs a:visited, 
+.ui-tabs-nav .ui-tabs-disabled .ui-tabs a:link, 
+.ui-tabs-nav .ui-tabs-disabled .ui-tabs a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text!important;
+}
+
+.ui-tabs-nav .ui-tabs a:hover, 
+.ui-tabs-nav .ui-tabs a:active,
+.ui-tabs-nav .ui-tabs-unselect .ui-tabs a:hover, 
+.ui-tabs-nav .ui-tabs-unselect .ui-tabs a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer!important; 
+	background-color:#333!important;
+	color:#fff!important;
+}
+
+.ui-tabs-disabled {
+    opacity: .4!important;
+    filter: alpha(opacity=40)!important;
+}
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear, @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block!important;
+}
+*:first-child+html .ui-tabs-nav  { /* @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block!important;
+}
+

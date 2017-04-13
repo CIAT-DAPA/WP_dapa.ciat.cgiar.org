@@ -1,0 +1,849 @@
+/*  
+Theme Name: PRiNZ BranfordMagazine PRO
+Theme URI: http://www.der-prinz.com/branfordmagazine-wordpress-magazine-style-theme-63
+Description: A premium Magazine Theme for Wordpress with multiple Functionalities, custom Widgets, an Options Panel and additional Page Templates.
+Version: 5.1
+Author: Michael Oeser
+Author URI: http://www.der-prinz.com
+
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+
+
+More Stylesheets for navigation and the additional page templates are located in the subfolder /styles
+
+
+/***************************************
+CSS Reset by Eric Meyer v1.0 | 20080212 
+****************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/******************************************
+*   HTML Elements                         
+******************************************/
+	
+body {
+	background:#333;
+	color: #333;
+	padding: 13px 0 25px 0;
+	}
+
+body, select, input, textarea {
+	font: 12px Arial, Verdana, Sans-Serif;
+	line-height:1.5em;
+	}
+	
+p {	margin: 15px 0;	}
+
+
+hr {
+	display: block;
+	height:1px;
+	background:#333;
+	border:0;
+	}
+
+small {
+	font-size: 0.9em;
+	padding:3px 6px;
+	}
+
+
+/******* Hyperlinks ********************/
+
+/* standard link behaviour */
+a:link, a:active, a:visited { 
+	color:#333;
+	text-decoration: underline; 
+	} 
+a:hover	{ 
+	color:#333;
+	text-decoration: none; 
+	}
+
+.blogtitle a { text-decoration: none; }
+
+/* Title area links */
+.title:link, .title:active, .title:visited { 
+	color: #840000; 
+	text-decoration: none;
+	} 
+.title:hover { 
+	color: #840000; 
+	text-decoration: underline;
+	} 
+	
+/* HTML headline links */
+h3 a:link, h3 a:active, h3 a:visited  {text-decoration:none;}
+h3 a:hover {text-decoration:underline;}
+
+h4 a:link, h4 a:active, h4 a:visited  {color:#666; text-decoration:none;}
+h4 a:hover {text-decoration:underline;}
+
+
+/* Links in the sidebar */
+.subnav li a:link, .subnav li a:visited { /* .subnav is the categories list */
+	background: #fff;
+	display:block;
+	padding:4px 4px 4px 20px;
+	border-bottom: 1px solid #999;
+	}
+		
+.subnav li a:hover, .subnav li a:active {
+	background: #F4F4EC;
+	text-decoration:none!important;
+	}
+
+#sidelist a:link, #sidelist a:active, #sidelist a:visited {text-decoration:none;}
+#sidelist a:hover {text-decoration:underline;}
+#sidelist .children li a, #sidelist .children li a:visited {
+	padding:2px 2px 2px 0px;
+	border:0;
+	background:#F4F4EC;
+	color: #666;
+	}
+#sidelist .children li a:hover, #sidelist .children li a:active	{
+	color:#000;
+	text-decoration:none!important;
+	}
+
+/* Links in unordered lists */
+.bullets li a { text-decoration:none!important;	}
+.bullets li a:hover { text-decoration:underline!important;	}
+
+/* How tags appear */
+.tags a {text-decoration:none;}
+.tags a:hover {text-decoration:underline;}
+
+/* Links within comments metadata (date, Author etc.) */
+.commentmetadata a:link, .commentmetadata a:active, .commentmetadata a:visited  {text-decoration:none;}
+.commentmetadata a:hover {text-decoration:underline;}
+
+/* Links in the footer */
+#footer a {text-decoration: none;} 
+#footer a:hover	{text-decoration: underline;}
+
+
+
+/******************************************
+*   Images                         
+******************************************/
+
+/*** default image behaviour ***/
+img { border:1px solid #999; padding:1px; }
+
+
+/*** WordPress specific image classes ***/
+.aligncenter, div.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.alignleft {
+float: left;
+margin: 4px 10px 1px 0;
+}
+
+.alignright {
+float: right;
+margin: 4px 0 1px 10px;
+}
+
+.wp-caption {
+   text-align: center;
+   background-color: #fff;
+   margin-top:5px;
+   margin-right: 15px;
+   margin-bottom:0px;
+}
+
+.wp-caption img{
+   padding:2px;
+   border:1px solid #999;
+}
+
+.wp-caption img:hover{
+   border:1px solid #333;
+}
+
+.wp-caption p.wp-caption-text {
+   color:#666;
+   font-size: 10px;
+   line-height: 12px;
+   padding: 7px 4px 2px 5px!important;
+   margin: 0!important;
+}
+
+		
+/******************************************
+*   General Structure                         
+******************************************/
+
+#logo {margin-bottom:20px;}
+
+#page { /*the main container*/
+	width:940px;
+	margin:0 auto;
+	font-size:1em;
+	background:#FFF;
+	padding: 10px 20px 35px 20px;
+	border:3px double #333;
+	}
+
+.left {
+	float:left;
+	}
+
+.right {
+	float:right;
+	}
+
+#sidebar {/*you guessed it: it´s the sidebar container*/
+	width: 300px;
+	float:right;
+	}
+
+#leftcol {/*the left homepage column carrying the "Featured Article" section*/
+	width:300px;
+	padding-right:10px;
+	}
+
+#leftcol, #rightcol {
+	margin-top:10px;
+	float:left
+	}	
+	
+#rightcol {/*actually the column in the middle of the homepage (if the right column is the sidebar)*/
+	width:300px;
+	padding-left:10px;
+	margin-top: -2px;
+	text-align:justify;
+	}
+
+
+		
+/******************************************
+*   Sidebar                         
+******************************************/
+
+.subnav li {/*.subnav is mainly the categories list*/
+	list-style:none;
+	}
+
+#sidelist li {
+	list-style:none;
+	}
+	
+.bullets li {
+	margin:0 0 5px 15px;
+	list-style:square;
+	}
+	
+#sidelist .bullets li {
+	list-style:square;
+	margin-bottom:5px;
+	margin-left:22px;
+	}
+
+#sidelist .children {
+	background:#F4F4EC;
+	}
+
+#sidelist .children li {
+	background: #F4F4EC;
+	list-style: none;
+	margin-left:15px;
+	padding-left:15px;
+	border-bottom:1px solid #fff;
+	}
+
+#sidelist .feed li{
+	margin-bottom:5px;
+	padding-left:20px;
+	background:url(images/rss.gif) no-repeat;
+	}
+
+#twitter_update_list li{
+	list-style:square;
+	margin-bottom:5px;
+	margin-left:22px;
+	}
+
+	
+/******************************************
+*   Headlines                         
+******************************************/
+
+.blogtitle, .blogtitle a {
+	color: #000;
+	font-size: 1.8em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: regular;
+	padding: 20px 0px 10px 0px;
+	}
+
+h1 {
+	color: #840000;
+	font-size: 1.8em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	margin: 0px 10px 0px 0px;
+	padding: 20px 0px 0px 10px;
+	}
+	
+h2 {
+	color: #840000;
+	font: 1.8em Georgia, "Times New Roman", Times, serif;
+	padding-bottom:8px;
+	border-bottom:1px solid #666;
+	margin: 20px 0;
+	}
+
+h3 {
+	font: 0.9em Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	letter-spacing:0.3em;
+	margin-bottom:4px;
+	font-weight:bold;
+	color:#840000;
+	}
+
+#sidebar h2, #sidebar h3 a {
+	font: 0.9em Arial, Helvetica, sans-serif;
+	letter-spacing:0.3em;
+	text-transform:uppercase;
+	margin-bottom:4px;
+	font-weight:bold;
+	color:#840000;
+	}
+
+#sidebar h3, #sidebar h2 {
+	font-size:0.9em;
+	border-top:3px double #999;
+	border-bottom:1px solid #999;
+	padding:5px 0 5px 2px;
+	margin:20px 0 15px 0;
+	color:#840000;
+	}
+
+#respond h3 {
+	font-size:1.1em;
+	border-top:1px solid #666;
+	margin-top:25px;
+	padding-top:20px
+	}
+
+h3#comments {
+	margin-top:32px
+	}
+
+h3 a:link, h3 a:visited {
+	color: #666;;
+	}
+
+h4 {
+	font-size:1.2em;
+	margin-bottom:6px;
+	}
+
+.entry h1 {
+	color: #840000;
+	font-size: 2.0em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	margin: 10px 0 20px 0;
+	padding:0;
+	}
+	
+.entry h2 {
+	color: #840000;
+	font-size: 1.8em; 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 10px 0 20px 0;
+	padding:0;
+	border:none;
+	}
+
+.entry h3 {
+	color:#840000;
+	font-size: 1.6em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	margin: 10px 0 20px 0;
+	padding:0;
+	text-transform:regular;
+	letter-spacing:0em;
+	}
+
+.entry h4 {
+	color:#840000;
+	font-size: 1.4em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	margin: 10px 0 20px 0;
+	padding:0;
+	}
+
+.entry h5 {
+	color:#840000;
+	font-size: 1.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	margin: 10px 0 20px 0;
+	padding:0;
+	}
+
+.entry h6 {
+	color:#840000;
+	font-size: 1.0em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	margin: 10px 0 20px 0;
+	padding:0;
+	}
+	
+	
+/******************************************
+*   Content                        
+******************************************/
+
+#content {
+	width:620px;
+	float:left
+	}
+	
+.description {
+	font-size: 1.3em;
+	font-weight: bold; 
+	color:#999;
+	}
+
+/* Featured Articles formatting "leftcol" */
+
+.feature {
+	background: url(images/backgrounds/bg_featured.jpg) repeat-x #F4F4EC;
+	padding:15px;
+	border: 1px solid #ccc;
+	}
+
+.feature p, #rightcol p { margin:0;	}
+
+#leftcol img, #rightcol img {
+	padding:1px;
+	border:1px solid #999;
+	}
+
+#leftcol .feature {	margin-bottom: 15px; }
+
+/* Formating of the Leadstory stuff in the tabbed section */
+			
+#leadpic {
+	float:left;
+	margin: 0 18px 8px 0;
+	padding:1px;
+	border: 1px solid #999;
+	}
+
+.title, a.title  {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:1.1em;
+	font-weight:bold;
+	color: #840000;
+	letter-spacing:normal;
+	}
+		
+#lead p {
+	margin-bottom:10px;
+	}
+
+.read-on a { /* This can be used to format the "[...]" link in the lead story */
+	color:#840000!important;
+	text-decoration:none;
+	}
+	
+.read-on a:hover {
+	text-decoration:underline;
+	}
+
+/* Formating of "rightcol" which is the column in the homepage middle ;-) */
+
+#rightcol img {
+	float:left;
+	margin:3px 10px 4px 0;
+	}
+
+#leftcol img {
+	margin-bottom: 4px;
+	display:block
+	}
+	
+#rightcol .clearfloat {
+	border-bottom:1px solid #999;
+	padding:12px 0;
+	}	
+
+/* Formating the additional headline on bottom of the homepage */
+#additional-headlines {
+	border-bottom:1px solid #999;
+	margin:20px 0 0 0;
+	}
+
+/* "more" Links in the excerpts */
+.excerpt_more a { 
+	color:#840000!important;
+	}
+
+.excerpt_more a:hover {
+	text-decoration:none;
+	}
+
+/* Post Formatting */
+
+.entry {
+	padding-bottom:28px;
+	text-align:justify;
+	}
+
+.post blockquote {
+	color:#666;
+	background:#F4F4EC;
+	padding:6px 14px;
+	margin:18px 35px;
+	border-right:1px solid #DDD;
+	border-bottom:1px solid #DDD;
+	}	
+
+.post ul li {
+	list-style:square;
+	margin-bottom:5px;
+	margin-left:42px;
+	}
+
+.post ol li {
+	margin-bottom:5px;
+	
+	margin-left:48px;
+	}
+	
+#tags {
+	padding:3px;
+	border-bottom:1px solid #DDD;
+	border-top:1px solid #DDD;	
+	}	
+	
+.postmetadata {
+	font-size:0.9em;
+	margin:0 0 10px 0;
+	padding:5px 10px;
+	background:#F4F4EC;
+	border-top:1px solid #E6E3D3;	
+	border-bottom:1px solid #E6E3D3;	
+	}
+
+/* Page navigation links */
+#paging {
+  width: 600px;
+  height: 30px;
+  list-style: none;
+}
+#paging li {
+  float: left;
+  height: 30px;
+  text-align: center;
+}
+#paging li.prev,
+#paging li.next {
+  width: 100px;
+}
+#paging li.pages {
+  width: 300px;
+  margin: 0 20px;
+}
+#paging li.pages a {
+  margin: 0 5px;
+  padding: 5px;
+  display: inline-block;
+  border:1px solid #ccc;
+  background: #eee;
+}
+#paging li.pages a:hover {
+  border: 1px solid #E6E3D3;
+  background: #fff;
+}
+#paging li.pages a.active {
+  font-weight:bold;	
+  padding: 7px;
+  border: 1px solid #E6E3D3;
+  background: #F4F4EC;
+}
+
+				
+
+/* Form Elements */
+
+select {
+	background:#f2f2f2;
+	border:1px solid #9c9c9c;
+	width:100%
+	}
+	
+
+#searchform { padding:16px 5px 0 0; }
+
+.searchfield {
+	width:150px;
+	padding: 1px 1px 1px 20px;
+	background: url(images/icons/search-16.png) no-repeat #fff;
+	color:#666;
+	border:1px solid #ddd;
+	}
+
+.searchfield:hover, .searchfield:focus {
+	background: url(images/icons/search-16.png) no-repeat #eee;
+	border:1px solid #999;
+	text-decoration:none;
+	}
+
+.newsletter {
+	width:160px;
+	padding: 2px 2px 2px 5px;
+	background: #fff;
+	color:#666;
+	border:1px solid #ddd;
+	}
+
+.newsletter:hover, .newsletter:focus {
+	background: #eee;
+	border:1px solid #999;
+	text-decoration:none;
+	}
+
+#newsleter-submit {
+	background: #333;
+	border:none;
+	color: #fff;
+	padding: 1px;
+	}
+
+#newsleter-submit:hover {
+	background: #666;
+	}
+
+.button {
+	padding: 1px;
+	background:#333;
+	color:#fff;
+	border:none;
+	}
+
+.button:hover {
+	background:#666;
+	text-decoration:none
+	}
+
+#commentform input {
+	width: 170px;
+	margin: 5px 5px 1px 0;
+	}
+
+#commentform textarea {
+	width: 100%;
+	margin-top:5px;
+	}
+
+
+
+/* Comments*/
+
+.commentlist {
+	padding-left:30px;
+	}
+	
+.commentlist li {
+	margin: 15px 0 3px;
+	padding: 8px 15px 10px 15px;
+	background:#F4F4EC;
+	border:1px solid #E6E3D3;
+	}
+
+.commentlist blockquote {
+	color:#666;
+	background:#fff;
+	padding:6px 14px;
+	margin:18px 35px;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	}	
+
+#commentform small {
+	background:#FFF;
+	font-weight:bold;
+	padding:0;
+	}
+	
+.commentmetadata {
+	display: block;
+	}
+
+.commentlist small {
+	background:#fff;
+	border:1px solid #E6E3D3;
+	}
+
+
+
+/* Float Properties*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfloat:after {
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+	content:".";
+	}
+	
+.clearfloat {
+	display:inline-block;
+	}	
+
+.clearfloat {
+	display:block;
+	}
+	
+	
+/******************************************
+*   Footer                        
+******************************************/
+
+#footer {
+	margin: 0 auto;
+	width: 900px;
+	font-size:0.9em;
+	text-align:center;
+	padding-top:15px;
+	color:#FFF;
+	}
+
+#footer a {
+	color:#ededed;
+	}
+
+#alternative_footer {
+	background: #E6E3D3;
+	border:3px double #333333;
+	margin: 5px auto;
+	width: 940px;
+	font-size:0.9em;
+	padding: 20px;
+	color:#4f4f4f;
+	}
+
+#alternative_footer a {
+	color:#4f4f4f;
+	}
+	
+.alternative_footer_left {
+	width: 223px;
+	float: left; 
+	padding:0 10 0 0px;
+	}
+
+.alternative_footer_middle1 {
+	width: 220px;
+	float: left; 
+	padding:0 10px;
+	border-left: 1px solid #9f9f9f;
+	}
+	
+.alternative_footer_middle2 {
+	width: 220px;
+	float: left; 
+	padding:0 10px;
+	border-left: 1px solid #9f9f9f;
+	}
+
+.alternative_footer_right {
+	width: 223px;
+	float: right; 
+	padding:0 0 0 10px;
+	border-left: 1px solid #9f9f9f;
+	}
+
+/* take nag line out of feed2js */
+li.f2jnag {
+      display:none;
+}
