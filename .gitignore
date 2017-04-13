@@ -25,10 +25,6 @@ wp-config.php
 sitemap.backup.xml
 sitemap.xml
 
-# ignore everything in the root except the "wp-content" directory.
-/*
-!wp-content/
-
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 wp-content/*

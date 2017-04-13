@@ -1,0 +1,52 @@
+# Block the include-only files.
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+
+Options -indexes
+
+# protect wpconfig.php
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+# Permanent URL redirect
+Redirect 301 /climate-smart-agriculture-in-latin-america-country-profiles/ http://dapa.ciat.cgiar.org/csa-profiles/
+
+
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
+# BEGIN IMAGE THUMBS
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)image-thumbs/([0-9]+)/([0-9]+)/(.*$) /wp-content/themes/branfordmagazine-pro/scripts/tthumb.php?src=http://$4&h=$2&w=$3&zc=1&q=100 [NC,L]
+</IfModule>
+# BEGIN IMAGE THUMBS
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN protect xmlrpc.php
+<files xmlrpc.php>
+order allow,deny
+deny from all
+</files>
+# END protect xmlrpc.php

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sitio en Mantenimiento</title>
+	</head>
+	<body>
+		<div
+			style="display: flex;
+			justify-content: center;">
+			<img src="https://www.certificadodetradicionylibertad.com/Imagenes/sitiomantenimiento.png">
+		</div>
+	</body>
+</html>
